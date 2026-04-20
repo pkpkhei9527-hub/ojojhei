@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>球隊｜康體新動歷籃球聯賽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                500: "#4ade80",
+                600: "#22c55e"
+              }
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-black text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-black/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="./index.html" class="shrink-0">
+          <img
+            src="/Users/hkpa_user/.cursor/projects/Users-hkpa-user-Desktop-Basketball-league/assets/ISP_logo_horizontal-G-68a6e6c7-72ea-4f4b-b942-7e44d70311c0.png"
+            alt="康體新動歷 Logo"
+            class="h-14 w-auto sm:h-16"
+          />
+        </a>
+        <nav class="overflow-x-auto">
+          <ul class="flex min-w-max items-center gap-2 text-sm font-medium sm:gap-3">
+            <li><a href="./index.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">主頁</a></li>
+            <li><a href="./schedule.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">賽程</a></li>
+            <li><a href="./teams.html" class="rounded-md bg-slate-900 px-3 py-2 text-brand-500">球隊</a></li>
+            <li><a href="./standings.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">排名</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section class="rounded-2xl border border-slate-800 bg-slate-950 p-5 sm:p-6">
+        <h1 class="text-xl font-bold sm:text-2xl">球隊</h1>
+        <p class="mt-1 text-sm text-slate-400">你可以直接修改卡片內的隊名、分組、主場和簡介。</p>
+
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Tigers</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：灣仔區</p>
+            <p class="mt-2 text-sm text-slate-400">備註：防守強度高、轉換快攻出色。</p>
+          </article>
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Yaks</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：黃大仙區</p>
+            <p class="mt-2 text-sm text-slate-400">備註：外線出手頻率高，節奏明快。</p>
+          </article>
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Cobras</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：港島東</p>
+            <p class="mt-2 text-sm text-slate-400">備註：禁區對抗能力強，籃板優勢明顯。</p>
+          </article>
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Orcas</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：九龍區</p>
+            <p class="mt-2 text-sm text-slate-400">備註：擅長半場陣地戰與高位掩護。</p>
+          </article>
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Oryxes</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：新界區</p>
+            <p class="mt-2 text-sm text-slate-400">備註：輪替深度佳，對抗體能型球隊有優勢。</p>
+          </article>
+          <article class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+            <h2 class="text-lg font-bold text-brand-500">Nighthawks</h2>
+            <p class="mt-2 text-sm text-slate-300">分組：A 組</p>
+            <p class="text-sm text-slate-300">主場：灣仔區</p>
+            <p class="mt-2 text-sm text-slate-400">備註：後場發動快，搶斷反擊具威脅。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

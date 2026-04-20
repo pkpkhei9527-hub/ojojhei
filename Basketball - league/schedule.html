@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>賽程｜康體新動歷籃球聯賽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                300: "#4ade80",
+                500: "#22c55e"
+              }
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-black text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-black/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <a href="./index.html" class="shrink-0">
+          <img
+            src="./assets/isp-logo.png"
+            alt="康體新動歷 Logo"
+            class="h-14 w-auto sm:h-16"
+          />
+        </a>
+        <nav class="overflow-x-auto">
+          <ul class="flex min-w-max items-center gap-2 text-sm font-medium sm:gap-3">
+            <li><a href="./index.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">主頁</a></li>
+            <li><a href="./schedule.html" class="rounded-md bg-slate-900 px-3 py-2 text-brand-500">賽程</a></li>
+            <li><a href="./teams.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">球隊</a></li>
+            <li><a href="./standings.html" class="rounded-md px-3 py-2 text-slate-300 hover:bg-slate-900 hover:text-white">排名</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section class="rounded-2xl border border-slate-800 bg-slate-950">
+        <div class="border-b border-slate-800 px-5 py-4 sm:px-6">
+          <h1 class="text-xl font-bold sm:text-2xl">賽程</h1>
+          <p class="mt-1 text-sm text-slate-400">直接編輯下表 `tbody` 內文字即可更新賽程資訊。</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-[980px] w-full text-sm">
+            <thead class="bg-slate-900 text-left text-xs uppercase tracking-wider text-slate-400">
+              <tr>
+                <th class="px-4 py-3">日期</th>
+                <th class="px-4 py-3">時間</th>
+                <th class="px-4 py-3">主隊</th>
+                <th class="px-4 py-3">比分</th>
+                <th class="px-4 py-3">客隊</th>
+                <th class="px-4 py-3">場地</th>
+                <th class="px-4 py-3">備註</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-200">
+              <tr class="hover:bg-slate-900/60">
+                <td class="px-4 py-3">1995-5-27 (六)</td>
+                <td class="px-4 py-3">05:12</td>
+                <td class="px-4 py-3">Beast</td>
+                <td class="px-4 py-3 font-semibold text-brand-500">0 - 0</td>
+                <td class="px-4 py-3">Tigers</td>
+                <td class="px-4 py-3">黃大仙區</td>
+                <td class="px-4 py-3 text-slate-400">常規賽</td>
+              </tr>
+              <tr class="hover:bg-slate-900/60">
+                <td class="px-4 py-3">2026-04-18 (六)</td>
+                <td class="px-4 py-3">15:00</td>
+                <td class="px-4 py-3">Cobras</td>
+                <td class="px-4 py-3 font-semibold text-brand-500">34 - 30</td>
+                <td class="px-4 py-3">Nighthawks</td>
+                <td class="px-4 py-3">黃大仙區</td>
+                <td class="px-4 py-3 text-slate-400">常規賽</td>
+              </tr>
+              <tr class="hover:bg-slate-900/60">
+                <td class="px-4 py-3">2026-05-02 (六)</td>
+                <td class="px-4 py-3">14:00</td>
+                <td class="px-4 py-3">Oryxes</td>
+                <td class="px-4 py-3 font-semibold text-amber-400">vs</td>
+                <td class="px-4 py-3">Nighthawks</td>
+                <td class="px-4 py-3">灣仔區</td>
+                <td class="px-4 py-3 text-slate-400">季軍首回合</td>
+              </tr>
+              <tr class="hover:bg-slate-900/60">
+                <td class="px-4 py-3">2026-05-02 (六)</td>
+                <td class="px-4 py-3">15:00</td>
+                <td class="px-4 py-3">Tigers</td>
+                <td class="px-4 py-3 font-semibold text-amber-400">vs</td>
+                <td class="px-4 py-3">Cobras</td>
+                <td class="px-4 py-3">灣仔區</td>
+                <td class="px-4 py-3 text-slate-400">冠軍首回合</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
